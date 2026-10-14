@@ -1,7 +1,7 @@
 use bevy::{audio::Volume, prelude::*};
 
 pub const SPEAKER_POSITION: Vec3 = Vec3::new(3.0, 1.2, 0.0);
-pub const SPEAKER_VOLUME: Volume = Volume::Linear(100.0);
+pub const SPEAKER_VOLUME: Volume = Volume::Linear(1.0);
 
 #[derive(Component)]
 pub struct DistanceAudio {

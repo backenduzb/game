@@ -21,17 +21,17 @@ pub fn setup(
 ) {
     info!("3D scinence loading");
 
-    commands.spawn((
-        Mesh3d(meshes.add(Cuboid::new(2.0, 2.0, 2.0))),
-        MeshMaterial3d(materials.add(Color::srgb(0.9, 0.25, 0.12))),
-        Transform::from_xyz(0.0, 1.0, 0.0),
-    ));
+    // commands.spawn((
+    //     Mesh3d(meshes.add(Cuboid::new(2.0, 2.0, 2.0))),
+    //     MeshMaterial3d(materials.add(Color::srgb(0.9, 0.25, 0.12))),
+    //     Transform::from_xyz(0.0, 1.0, 0.0),
+    // ));
 
-    commands.spawn((
-        Mesh3d(meshes.add(Cuboid::new(2.0, 2.0, 2.0))),
-        MeshMaterial3d(materials.add(Color::srgb(0.9, 0.25, 0.12))),
-        Transform::from_xyz(0.0, 1.0, 0.0),
-    ));
+    // commands.spawn((
+    //     Mesh3d(meshes.add(Cuboid::new(2.0, 2.0, 2.0))),
+    //     MeshMaterial3d(materials.add(Color::srgb(0.9, 0.25, 0.12))),
+    //     Transform::from_xyz(0.0, 1.0, 0.0),
+    // ));
 
     commands.spawn((
         DirectionalLight {

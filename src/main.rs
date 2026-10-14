@@ -1,7 +1,10 @@
+#![allow(warnings)]
+
 use bevy::{
     audio::{AudioPlugin, SpatialScale},
     prelude::*,
 };
+
 
 mod camera;
 mod rendering;
@@ -23,9 +26,14 @@ fn main() {
                 ui::hud::setup,
                 rendering::scene::setup,
                 world::scene::spawn_models,
-                sound::spatial::spawn_sptial_audio,
             ),
         )
-        // .add_systems(Update, camera::controller::update_distance_audio)
+        .add_systems(
+            Update,
+            (
+                world::scene::debug_gltf_animations,
+                world::scene::play_door_animation,
+            ),
+        )
         .run();
 }
